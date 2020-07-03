@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>四条边Round效果</title>
+		<style>
+			div{
+				width: 150px;
+				height: 100px;
+				border: 27px solid orange;
+			}
+			.border-image-round-hv{
+				-webkit-border-image: url("../h185/img/border.png") 27 round;
+				-moz-border-image: url("../h185/img/border.png")27 round;
+				-o-border-image:url("../h185/img/border.png")27 round;
+				border-image:url("../h185/img/border.png")27 round;
+			}
+			.border-image-repeat-hv{
+				-webkit-border-image: url("../h185/img/border.png") 27 repeat;
+				-moz-border-image: url("../h185/img/border.png")27 repeat;
+				-o-border-image:url("../h185/img/border.png")27 repeat;
+				border-image:url("../h185/img/border.png")27 repeat;
+			}
+			.border-image-stretch-hv{
+				-webkit-border-image: url("../h185/img/border.png") 27 stretch;
+				-moz-border-image: url("../h185/img/border.png")27 stretch;
+				-o-border-image:url("../h185/img/border.png")27 stretch;
+				border-image:url("../h185/img/border.png")27 stretch;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="border-image-repeat-hv">水平和垂直都repeat</div>
+		<p></p>
+		
+		<div class="border-image-round-hv">水平和垂直都round</div>
+		<div class="border-image-stretch-hv">水平和垂直都stretch</div>
+	</body>
+</html>

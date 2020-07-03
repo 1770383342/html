@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Siblings</title>
+<script language="javascript">
+function nextSib(node){
+	var temLast = node.parentNode.lastChild;
+	//判断是否是最后一个节点，如果是则返回null
+	if(node == tempLast)
+	return null;
+	var tempobj = node.nextSibling;
+	//逐一搜索后面的兄弟节点，直到发现元素节点为止
+	while(tempobj.nodeType!=1 && tempobj.nextSibling!=null)
+	tempobj = tempobj.nextSibling;
+	//三目运算符，如果是元素节点则返回节点本身，否则返回null。元素节点时tempobj.nodeType==1;
+	return (tempobj.nodeType==1)?tempobj:null;
+}
+function prevSib(node){
+	var tempFirst = node.parentNode.firstChild;
+	//判断是否是第一个节点，如果是则返回null
+	if(node == tempFirst)
+	return null;
+	var tempobj = node.previousSibling;
+	//逐一搜索前面的兄弟节点，直到发现元素节点为止
+	while(tempobj.nodeType!=1 && tempobj.nextSibling!=null)
+	tempobj = tempobj.previousSibling;
+	return (tempobj.nodeType==1)?tempobj:null;
+}
+function myDOMInspector(){
+	var myItem = document.getElementById("myDearFood");
+	//获取后一个元素兄弟节点
+	var nextListItem = nextSib(myItem)
+	//获取前一个元素兄弟节点
+	var preListItem = prevSib(myItem);
+	alert("后一项:" + ((nextListItem!=null)?nextListItem..firstChild.nodeValue:null) + "前一项:" + ((preListItem!=null)?preListItem.firstChild.nodeValue:null));
+}
+</script>
+</head>
+
+<body onLoad="myDOMInspector()">
+<ul>
+<li>糖醋排骨</li>
+<li>圆笼粉蒸肉</li>
+<li>泡菜鱼</li>
+<li id="myDearFood">板栗烧鸡</li>
+<li>麻婆豆腐</li></ul></body>
+</html>

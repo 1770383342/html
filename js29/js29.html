@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>new 类名 构造函数</title>
+</head>
+
+<body>
+<script>
+var a=new Array();
+var b=new Array;
+var c=new Object();
+var d=new Object;
+document.write("变量a的类型："+typeof a);
+document.write("<br>");
+document.write("变量b的类型："+typeof b);
+document.write("<br>");
+document.write("变量c的类型："+typeof c);
+document.write("<br>");
+document.write("变量d的类型："+typeof d);
+document.write("<br>");
+document.write("各对象被赋值以后:");
+document.write("<br>");
+a[0]="00";
+a[1]="11";
+a[2]="22";
+document.write("变量a的类型："+typeof a+" "+a);
+document.write("<br>");
+b=["00","11","22"];
+var b1=["00","11","22"];
+var b2=[];
+b2[0]=0;
+b2[1]=1;
+b2[2]=2;
+document.write("变量b的类型："+typeof b+" "+b[0]+b[1]+b[2]);
+document.write("<br>");
+document.write("变量b1的类型："+typeof b1+" "+b1[0]+b1[1]+b1[2]);
+document.write("<br>");
+document.write("变量b2的类型："+typeof b2+" "+b2[0]+b2[1]+b2[2]);
+document.write("<br>");
+c.姓名="胖哥";
+c.性别="女";
+c.岁数="19";
+c.住地="重庆师范大学城";
+document.write("变量c的类型："+typeof c+" "+c+" "+c.姓名+c.性别+c.岁数+c.住地);
+document.write("<br>");
+d.姓名="吴涛";
+d.性别="男";
+d.岁数="20";
+document.write("变量d的类型："+typeof d+" "+d.姓名+d.性别+d.岁数);
+document.write("<br>");
+var e={年级:"15",专业:"计科",姓名:"刘云鹏"};
+document.write("变量e的类型："+typeof e+" "+e);
+document.write("<br>");
+document.write("变量e的类型："+typeof e+" "+e.姓名+e.年级+e.专业);
+document.write("<br>");
+</script>
+</body>
+</html>

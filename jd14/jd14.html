@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Siblings</title>
+<script language="javascript">
+function myDOMInspector(){
+	var myItem = document.getElementById("myDearFood");//访问兄弟节点
+	var nextListItem = myItem.nextSibling;
+	var preListItem = myItem.previousSibling;
+	alert(nextListItem.tagName + " " + preListItem.tagName);
+}
+</script>
+</head>
+
+<body onLoad="myDOMInspector()">
+<ul>
+<li>糖醋排骨</li>
+<li>圆笼粉蒸肉</li>
+<li>泡菜鱼</li>
+<li id="myDearFood">板栗烧鸡</li>
+<li>麻婆豆腐</li></ul>
+</body>
+</html>

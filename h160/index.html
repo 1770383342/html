@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Opera、Chrome、Safiri浏览器线性渐变填充</title>
+		<style type="text/css">
+			div{width: 350px; height: 200px; border: 2px solid #f0f;
+			float: left; margin: 5px;}
+			.new{
+				background: -o-linear-gradient(left, #ace, #f96, #ace, #f96, #ace);
+				background: -webkit-linear-gradient(left, #ace, #f96, #ace, #f96, #ace);
+			}
+			.new1{
+				background:-o-linear-gradient(top, #f00, #ff0,#bb0ff3) ;
+				background:-webkit-linear-gradient(top, #f00, #ff0,#bb0ff3) ;
+			}
+			.new2{
+				background:-o-linear-gradient(top, #fff,#000) ;
+				background:-webkit-linear-gradient(top, #fff,#000) ;
+			}
+			.new3{
+				background:-o-linear-gradient(bottom, #fff,#000) ;
+				background:-webkit-linear-gradient(bottom, #fff,#000) ;
+			}
+			.new4{
+				background:-o-linear-gradient(left top, #fff,#000) ;
+				background:-webkit-linear-gradient(left top, #fff,#000) ;
+			}
+			.new5{
+				background:-o-linear-gradient(right bottom, #fff,#000) ;
+				/*background:-o-linear-gradient(100% 100%, #fff,#000) ;*/
+				background:-webkit-linear-gradient(right bottom, #fff,#000) ;color: #ff0;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="new">left, #ace, #f96, #ace, #f96, #ace</div>
+		<div class="new1">top, #f00, #ff0,#bb0ff3</div>
+		<div class="new2">top, #fff,#000</div>
+		<div class="new3">bottom, #fff,#000</div>
+		<div class="new4">left top, #fff,#000</div>
+		<div class="new5">right bottom, #fff,#000</div>
+	</body>
+</html>

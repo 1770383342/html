@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>字符^的使用</title>
+</head>
+
+<body>
+<h3>行首匹配字符^的使用</h3>
+<script language="javascript">
+var reg_expression = /^ming/; //把正则表达式赋值给一个变量reg_expression。此变量称为正则表达式对象。
+var textString = "mingrisoft";
+var result = reg_expression.test(textString);//匹配时返回true,否则false
+document.write("<font size='+1'>"+result+"<br>");
+if(result){
+	document.write("正则表达式/^ming/匹配字符串\""+textString + "\".<br>");
+}
+else{
+	alert("未找到匹配的模式！");
+}
+</script>
+</body>
+</html>

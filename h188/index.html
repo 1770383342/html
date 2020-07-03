@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Border-image制作按钮</title>
+		<style>
+			div{
+				-webkit-border-image: url(img/bt_blue.png) 0 12 0 12 stretch stretch;
+				/*stretch stretch 可省略，默认值*/
+				-moz-border-image: url(img/bt_blue.png) 0 12 0 12 stretch stretch;
+				display: block;
+				border-width: 0 12px;
+				padding: 10px;
+				text-align: center;
+				font-size: 16px; color: white;
+				text-decoration: inherit;
+			}
+		</style>
+	</head>
+	<body>
+		<div>在safari3+和FF3.5浏览器里能看到边框背景图</div>
+	</body>
+</html>

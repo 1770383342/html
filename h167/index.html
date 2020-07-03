@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>径向渐变填充4</title>
+		<style>
+			div{width: 600px; height: 280px; float: left; margin: 5px;}
+			.div1{
+				background: -moz-radial-gradient(#ace,#f96,#1e90ff);
+				background: -webkit-radial-gradient(#ace,#f96,#1e90ff);
+			}
+			.div2{
+				background: -moz-radial-gradient(contain,#ace,#f96,#1e90ff);
+				background: -webkit-radial-gradient(contain,#ace,#f96,#1e90ff);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1">#ace,#f96,#1e90ff</div>
+		<div class="div2">contain,#ace,#f96,#1e90ff</div>
+	</body>
+</html>

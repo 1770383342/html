@@ -1,0 +1,42 @@
+<!-- 
+    parseInt(string, radix)
+    string	
+        必需。要被解析的字符串。
+    radix	
+        可选。表示要解析的数字的基数。该值介于 2 ~ 36 之间。
+        如果省略该参数或其值为 0，则数字将以 10 为基础来解析。如果它以 “0x” 或 “0X” 开头，将以 16 为基数。
+        如果该参数小于 2 或者大于 36，则 parseInt() 将返回 NaN。
+-->
+
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>parseInt函数和parseFloat函数</title>
+</head>
+
+<body>
+    <script language="javascript">
+        document.write(parseInt("4567red") + "<br>");
+        document.write(parseInt("53.5") + "<br>");
+        document.write(parseInt("0xC") + "<br>");//直接进制转换
+        document.write(parseInt("isaacshun@gmail.com") + "<br>");
+        document.write(parseInt("AF", 16) + "<br>");
+        document.write(parseInt("11", 2) + "<br>");
+        document.write(parseInt("011") + "<br>");
+        //0开头是Safar浏览器和360浏览器默认为八进制，但其它浏览器默认为10进制。所以最好指定函数为parseInt("011",8)
+        document.write(parseInt("011", 8) + "<br>");
+        document.write(parseInt("011", 10) + "<br>");
+        //指定为十进制
+        document.write(parseFloat("34535orange") + "<br>");
+        document.write(parseFloat("0xA") + "<br>");
+        //不在有默认进制，直接输出第一个字符“0”
+        document.write(parseFloat("435.34") + "<br>");
+        document.write(parseFloat("435.34.564") + "<br>");
+        document.write(parseFloat("isaacshun@fmail.com") + "<br>");
+    </script>
+</body>
+
+</html>

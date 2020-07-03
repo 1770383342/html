@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+body{font-size:9pt; margin:0px;}
+td{font-size:9pt; line-height:144%;}
+a:hover{color:#f60;}
+a{font-size:9pt; text-decoration:none; color:#4c94c1;}
+a1{font-size:9pt; text-decoration:none; color:#fff;}
+.btn_grey{ font-family:"宋体"; font-size:9pt;
+color:#333; background-color:#eee;
+cursor:hand; padding:1px; height:19px;
+border-top:1px solid #fff;
+border-right:1px solid #666;
+border-bottom:1px solid #666;
+border-left:1px solid #fff;
+}
+.word_Green{ font-size:9pt; color:#1b4e51; }
+.word_orange{ font-size:9pt; color:#f60;}
+.txt_grey{ font-family:"宋体"; font-size:9pt;
+color:#333; width:110;
+border:1px solid #999;
+}
+input{ font-family:"宋体"; font-size:9pt;
+color:#333; border:1px solid #999;
+}
+.input1{border:0px;}
+.logininput{ height:22px; border-color:#15595c;
+border-size:1px;}
+.wenbenkuang{ font-family:"宋体"; font-size:9pt;
+color:#333; border: 1px solid #999;
+}
+.search{ font-family:宋体; font-size:9pt;
+color:#000; background-color:#eee;
+border:1px hidden #000;
+}
+.tableBorder{ border:#1b4e51 1px solid;}
+.tableBorder_grey{ border:#ddd 1px solid;}
+.tableBorder_gray{ border:#ddd 1px solid;}
+.tableBorder_Top{ border:1px solid #9ca6c6;
+border-bottom-style:none;
+border-left-style:none;
+border-right-style:none;
+}
+.tableBorder_Botton{ border:1px solid #9ca6c6;
+border-top-style:none;
+border-left-style:none;
+border-right-style:none;
+}
+hr{color:#9ca6c6;}
+.tableBorder_B{ border:1px solid #9ca6c6;
+border-left-style:none;
+border-right-style:none;
+border-top-style:none;
+}
+.menuskin{ border:#666 1px solid;
+visibility:hidden; position:absolute;
+/*background-color:#efefef;*/
+background-image:url("../images/item_out.gif");
+/*无此文件*/
+background-repeat:repeat-y;
+Filter:Alpha(Opacity=85); /*支持低版本的IE浏览器*/
+opacity:0.85; /*支持CSS3的浏览器*/
+}
+/*CSS文件完*/

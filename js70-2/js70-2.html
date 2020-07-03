@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>分组非捕获匹配</title>
+</head>
+
+<body>
+<script>
+var s2015="重庆师范大学计算机学院计科和职教专业2015后面要显示么";
+var s2016="重庆师范大学计算机学院计科和职教专业2016后面要显示么";
+var s2017="重庆师范大学计算机学院计科和职教专业2017后面要显示么";
+var s2018="重庆师范大学计算机学院计科和职教专业2018后面要显示么";
+var reg0bj=/(?:.*)职教专业(2015|2016)后面(要显示)/;
+var result5=reg0bj.exec(s2015);
+//exec函数的返回值是数组。0号元素为整个正则表达式匹配值，1号元素为第1分组的匹配值，2号元素为第2分组的匹配值，以此类推。在本例中，由于第1分组和第3分组为非捕获匹配，则在exec返回的数组中不存在匹配值。
+var result6=reg0bj.exec(s2016);
+var result7=reg0bj.exec(s2017);
+var result8=reg0bj.exec(s2018);
+document.write(result5+"<br>"+result6+"<br>"+result7+"<br>"+result8);
+document.write("<br><br><br>");
+</script>
+</body>
+</html>

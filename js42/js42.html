@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>for语句</title>
+</head>
+
+<body>
+<script language="javascript">
+var aNumbers = new Array();//创建一个空数组
+var sMessage = "你输入了：\n";//换行符'\n'
+var iTotal = 0;
+var vUserInput;
+var iArrayIndex = 0;
+do{
+	vUserInput = prompt("输入一个数字，或者'0'退出","0");
+	aNumbers[iArrayIndex] = vUserInput;
+	iArrayIndex++;
+}while(vUserInput !=0)
+//当输入为0（默认值）时退出循环体
+//for循环遍历数组的常用方法：
+for(var i=0;i<aNumbers.length;i++){
+	iTotal += Number(aNumbers[i]);
+	sMessage += aNumbers[i] + "\n";
+}
+sMessage += "总数" + iTotal;
+alert(sMessage);
+//警示框通常用来输出显示内容
+</script>
+</body>
+</html>

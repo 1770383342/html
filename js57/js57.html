@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>递归函数的应用</title>
+<script type="text/javascript">
+function f(num){//定义递归函数
+if(num<=1){  //如果num<=1
+return 1;   //返回1
+}
+else{
+	return f(num-1)*num; //调用递归函数
+}
+}
+</script>
+</head>
+
+<body>
+<script type="text/javascript">
+alert("10!的结果为："+f(10));  //调用函数
+</script>
+</body>
+</html>

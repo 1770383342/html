@@ -1,0 +1,22 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>slice()和substring()的区别</title>
+    <script language="javascript">
+        var sMyString = "Tsinghua University";
+        document.write(sMyString.slice(2, -3) + "<br>");
+        //负数从后面向前面数，计算结束位置或者开始位置。
+        document.write(sMyString.substring(2, -3) + "<br>");
+        //负数为0，两个参数中数字小的为开始位置。
+        document.write(sMyString.substring(2, 0) + "<br>");
+        document.write(sMyString + "<br>");
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

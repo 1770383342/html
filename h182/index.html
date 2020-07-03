@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>drop shadow effect</title>
+		<style>
+			.drop-shadow{
+				width: 300px;
+				height: 150px;
+				position: relative;
+				background: #ccc;
+				margin-left: 100px;
+			}
+			.drop-shadow:before, .drop-shadow:after{
+				content: "";
+				position: absolute;
+				z-index: -1;
+				bottom: 15px;
+				left: 10px;
+				width: 50%;
+				max-width: 150px;
+				height: 20%;
+				/*add box-shadow*/
+				 -webkit-box-shadow: 0 15px 10px rgba(125,125,125,0.8);
+				 -moz-box-shadow:0 15px 10px rgba(125,125,125,0.8);
+				 box-shadow: 0 15px 10px rgba(125,125,125,0.8);
+				 /*add css3 transform*/
+				 
+				-webkit-transform:rotate(-3deg);
+				-moz-transform:rotate(-3deg);
+				-o-transform:rotate(-3deg);
+				transform: rotate(-3deg);
+			}
+			.drop-shadow:after{
+				right: 10px;
+				left: auto;
+				-webkit-transform: rotate(3deg);
+				-moz-transform: rotate(3deg);
+				-o-transform:rotate(3deg);
+				transform: rotate(3deg);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="drop-shadow">drop shadow effect</div>
+	</body>
+</html>

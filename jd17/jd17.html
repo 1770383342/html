@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>创建新节点</title>
+<script language="javascript">
+function createP(){
+	var oP = document.createElement("p");
+	//创建一个P节点放在oP变量中
+	var oText = document.createTextNode("这是一段感人的故事");
+	//用字符串"这是一段感人的故事"创建一个文件节点，并把此文本节点放在oText变量中
+	oP.appendChild(oText);
+	//再P标记的元素节点oP中添加文本节点oText
+	document.body.appendChild(oP);
+	//有文档的body标记中添加P标记的oP节点
+}
+</script>
+</head>
+
+<body onLoad="createP()">
+<p>事先写一行文字在这里，测试appendChild()方法的添加位置</p>
+</body>
+</html>

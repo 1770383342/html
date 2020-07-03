@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>函数与arguments</title>
+<script language="javascript">
+var sName= prompt("输入一个人名，输入bye退出","bye");//sName是全局变量
+function sayName(){
+	if(arguments[0]=="bye")return;
+	document.write("Hello "+arguments[0]+"<br>");
+}
+sayName(sName);//函数调用
+function ArgsNum(){//没有形参，也可以录入实参
+return arguments.length;}
+//录入每个实参参数都将放在了arguments数组中
+document.write(ArgsNum("isaac",25) + "<br>");
+document.write(ArgsNum() + "<br>");
+document.write(ArgsNum(3) +　"<br>");
+</script>
+</head>
+
+<body>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>标准DOM的事件监听</title>
+<script language="javascript">
+function fnClick1(){
+	alert("我被fnClick1点击了");
+	//oP.removeEventListener("click",fnClidk2,false);
+	//删除监听函数2
+	}
+	function fnClick2(){
+		alert("我被fnClick2点击了");
+	}
+	var oP;
+	window.onload = function(){
+		oP = document.getElementById("myP");//找到对象
+		oP.addEventListener("click",fnClick1,false);
+		//添加监听函数1
+		oP.addEventListener("click",fnClick2,false);
+		//添加监听函数2
+	}
+	</script>
+</head>
+
+<body>
+<div>
+<p id="myP">Click Me</p>
+</div>
+</body>
+</html>

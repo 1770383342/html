@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>#rgb颜色类型和IE专属性不透明度</title>
+		<style>
+			body{background: #ff00ff;}
+			div{width: 240px; height: 165px; margin-right: 10px;}
+			.div1{ background: #00ff00;}
+			.div2{ background: #00FF00; filter: Alpha(opacity=50);}
+			img{ width: 240px; clear: left; border: 3px dashed #00f;}
+			.pic{ filter: alpha(opacity=50);}
+		</style>
+	</head>
+	<body>
+		<div style="float: left; position: relative;">
+			<div class="div1"></div>
+			<div class="div2"></div>
+		</div>
+		<img src="../h154/img/qiuqiu.jpg" alt="秋秋妹" />
+		<img src="../h154/img/qiuqiu.jpg" alt="秋秋妹" class="pic">
+	</body>
+</html>

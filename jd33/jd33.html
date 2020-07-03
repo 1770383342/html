@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>事件的目标</title>
+<script language="javascript">
+function handle(oEvent){
+	if(window.event) oEvent = window.event;  //处理兼容性，获取事件对象
+	var oTarget;
+	if(oEvent.srcElement)
+	//处理兼容性，获取事件目标
+	oTarget = oEvent.srcElement;
+	else
+	oTarget = oEvent.target;
+	alert(oTarget.tagName);//弹出目标的标记名称
+}
+window.onload = function(){
+	var oImg = document.getElementsByTagName("img")[0];
+	oImg.onclick = handle;
+}
+</script>
+</head>
+
+<body>
+<img src="02.jpg" border="0">
+</body>
+</html>

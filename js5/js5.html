@@ -1,0 +1,24 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>slice()和substring()</title>
+    <script language="javascript">
+        var sMyString = "Tsinghua University";
+        document.write(sMyString.slice(1, 3) + "<br>");
+        document.write(sMyString.substring(1, 3) + "<br>");
+        //注意结束为止3不在截取长度内。
+        document.write(sMyString.slice(4) + "<br>");
+        document.write(sMyString.substring(4) + "<br>");
+        //当函数只有一个参数时，这个参数为开始位置，从开始截取整个字符串的后面的整个长度。
+        document.write(sMyString + "<br>");
+        //不改变原字符串
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

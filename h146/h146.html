@@ -1,0 +1,101 @@
+﻿
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>设计可用的表单</title>
+		<style type="text/css">
+			body{
+				font-family: helvetica; arial, sans-serif;
+				margin: 0px 0px 0px 0px;
+				font-size: 14px;
+				background-color: #ffffff;
+			}
+			div.wrapper{
+				background-image: url(img/bg.gif);
+				background-repeat: no-repeat;
+				width: 348px;
+				height: 384px;
+				margin-left: 14px;
+				padding-top: 75px;
+			}
+			div.ribbon{
+				background-image: url(img/ribbon.png);
+				background-repeat: no-repeat;
+				width: 358px;  height: 45px;
+				float: left;
+				margin-top: 25px;
+				margin-left: 10px;
+				margin-left: 25px;
+				padding-top: 5px;
+				color: #FFFFFF;
+				font-weight: bold;
+			}
+			div.logo{
+				background: url(img/logo.png) no-repeat;
+				width: 330px;
+				height: 115px;
+			}
+			div.loginwrapper {margin-left: 40px;}
+			span.usertext{
+				color: #478fab;
+				font-weight: bold;
+			}
+			input.textbox{
+				background: url(img/text_field.png) 0px -25px; /*最先显示下面那个文本框背景图片*/
+				width: 264px; height: 20px;  border: 0px;
+				padding-top: 5px;
+				padding-left: 4px;
+			}
+			input.textbox:hover{
+				background: url(img/text_field.png) 0px 0px;
+				border: 0px;
+			}
+			div.bottomwrapper{
+				margin-left: 40px;
+				margin-top: 50px;
+			}
+			a:link, a:visited {
+				color: #FFFFFF;
+				text-decoration: none;
+			}
+			a:hover{ color: #95ddf9;}
+			input.button {
+				/*按钮图片的原始状态*/
+				background: url(img/login_btn.png) 0px 0px;
+				width: 92px;
+				height: 31px;
+				border: 0px;
+				float: right;
+				margin-right: 20px;
+				margin-top: 5px;
+			}
+			/*当鼠标移到图片上时，图片的原始定义属性参数不变，除非在input.button:hover
+			 * 伪类选择器中重新定义了某些属性参数
+			 */
+			input.button:hover{ background: url(img/login_btn.png) 0px -31px;}
+			/*当鼠标移到图片上时，图片的原始定义属性参数不变，除非在input.button:hover
+			  伪类选择器中重新定义了某些属性参数*/
+			 input.button:active
+			 {background: url(img/login_btn.png) 0px -62px;}
+		</style>
+	</head>
+	<body>
+		<h1>设计可用的表单</h1>
+		<div class="ribbon">用户登录</div>
+		<div class="wrapper">
+			<div class="logo"></div>
+			<div class="loginwrapper">
+				<span class="usertext">姓名</span><br />
+				<input class="textbox" size="25" type="text" /><br />
+				<span class="usertext">密码：</span><br />
+				<input class="textbox" size="25" type="password" />
+				<img alt="Lock Image" src="img/lock.png" /><br />
+			</div>
+			<div class="bottomwrapper">
+				<input class="button" type="button" />
+				<a href="#">忘记密码</a><br />
+				<a href="#">注册新用户</a></div>
+			</div>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+﻿
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>设计可用的表单</title>
+		<style type="text/css">
+			h1{font-size: 20px;}
+			#login{ width: 400px; padding: 1em 2em 0 2em;
+			font-size: 12px;}
+			label{
+				line-height: 26px;
+				display: block;
+				font-weight: bold;
+			}
+			#name1, #password{
+				border: 1px solid #ccc;
+				width: 160px;
+				height: 22px;
+				padding-left: 20px;/*要迈过文本框中的图标*/
+				margin: 6px 9; line-height: 20px;
+			}
+			#name1{ background: url(img/name.gif) no-repeat 2px 2px;}
+			#password{ background: url(img/password.gif) no-repeat 2px 2px;}
+			/* #name1和#password选择器相同的属性时同设计，不同的属性单独设置*/
+			.button { margin: 6px 0;}
+		</style>
+	</head>
+	<body>
+		<h1>设计可用的表单</h1>
+		<fieldset id="login">
+			<legend>用户登录</legend>
+			<form action="" method="POST" class="form1">
+				<!--form1样式并没有在style中定义-->
+				<label for="name1">姓名
+				<input name="name1" type="text" id="name1" value="">
+				</label>
+				<label for="password">密码
+				<input name="password" type="text" id="password" value=""/>
+				</label>
+				<input type="image" class="button" src="img/login1.gif" />
+			</form>
+		</fieldset>
+	</body>
+</html>

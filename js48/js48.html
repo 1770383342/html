@@ -1,0 +1,18 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>枚举循环访问数组中的元素</title>
+</head>
+
+<body>
+<script>
+var oMy=["谭自立","男","13370724912"];//定义新数组
+document.write(typeof(oMy)+"<br>");
+for(property in oMy){//property是oMy数组中的下标，是形式变量名，也可以用其他变量名代替，例如str等。
+document.write("oMy["+property+"]="+oMy[property]+"<br>");
+//取oMy对象变量中的属性值：oMy[property]
+}
+</script>
+</body>
+</html>

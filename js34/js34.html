@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>判断用户是否输入用户名与密码</title>
+<script language="javascript">
+function check(){
+	var name = form1.user.value;//获取用户添加的用户名信息
+	var pwd = form1.pwd.value; //获取用户添加的密码信息
+	if((name=="") || (name==null)){//判断用户名是否为空
+	alert("请输入用户名!");
+	form1.user.focus(); //用户名文本框获取焦点
+	return;
+	}else if((pwd =="")||(pwd == null)){//判断密码是否为空
+	alert("请输入密码！");
+	form1.pwd.focus(); //密码文本框获取焦点
+	return;
+	}else{
+		form1.submit();  //提交表单
+	}
+}
+</script>
+</head>
+
+<body>
+<form action="" method="post" name="form1">
+<table border="0" cellspacing="2" cellpadding="0" width="220px" height="50px">
+<tr>
+<td style="background:#ccc;">●用户登录</td>
+</tr>
+<tr>
+<td>用户：<input type="text" name="user" id="user"/></td>
+</tr>
+<tr>
+<td>密码：<input type="password" name="pwd" id="pwd"/></td>
+</tr>
+<tr>
+<td width="50">&nbsp;&nbsp;&nbsp;<input type="submit" value="提交" onclick="return check()"/>
+&nbsp;&nbsp;&nbsp;<input type="reset"/></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>element.style.property</title>
+<style type="text/css">
+.example{color:blue; font-size:36px; font-family:黑体;}
+.qing{color:#0ff;}/*暂时不用*/
+.zhi{color:#f0f;}/*暂时不用*/
+</style>
+<script>
+window.onload=function(){
+	/*
+	var oobj=document.getElementsByClassName("example");
+	var para=oobj[0];
+	var mydisplay=oobj[1];*/
+	//上面注释掉的三句代码与下面二句代码功能上是一样的
+	var para=document.getElementsByClassName("example")[0];
+	var mydisplay=document.getElementsByClassName("example")[1];
+	mydisplay.innerHTML+=
+	"dom元件的节点名："+para.nodeName+"<br>"+
+	"dom元件的字体："+para.style.fontFamily+"<br>"+
+	"dom元件的字号："+para.style.fontSize+"<br>"+
+	"dom元件的字体颜色："+para.style.color+"<br>";
+}
+function color1(){
+	var oobj=document.getElementsByClassName("example");
+	var mydisplay=oobj[1];
+	mydisplay.style.color="#0ff";
+}
+function color2(){
+	var oobj=document.getElementsByClassName("example");
+	var mydisplay=oobj[1];
+	mydisplay.style.color="#f0f";
+}
+</script>
+<!--
+<script language="javascript" src="dai.js"></script>
+-->
+</head>
+
+<body>
+<input type="button" value="青色" onClick="color1()"/>
+<input type="button" value="紫色" onClick="color2()"/>
+<p class="example">这是一段文字的例子。。。</p>
+<div class="example"></div>
+</body>
+</html>

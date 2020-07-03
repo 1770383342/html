@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>插入节点</title>
+<script language="javascript">
+function insertP(){
+	var o0ldP = document.getElementsByTagName("p")[0];
+	var oNewP = document.createElement("p");  //新建节点
+	var oText = document.createTextNode("这是一个感人肺腑的故事");
+	oNewP.appendChild(oText); //此时的oNewP节点还没有上屏幕
+	o0ldP.parentNode.insertBefore(oNewP,o0ldP);
+	//插入节点，在原来的P节点钱插入新的P节点
+}
+</script>
+</head>
+
+<body onLoad="insertP()">
+<p>插入到这行文字之前</p>
+</body>
+</html>

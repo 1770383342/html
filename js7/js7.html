@@ -1,0 +1,26 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>indexof()和lastIndexOf()</title>
+    <script language="javascript">
+        var sMyString = "Tsinghua University";
+        document.write(sMyString.indexOf("i") + "<br>");
+        //从前往后寻找，结果是2。
+        document.write(sMyString.indexOf("i", 3) + "<br>");
+        //可选参数，从第3个字符开始往后找i，结果是11
+        document.write(sMyString.lastIndexOf("i") + "<br>");
+        //从后往前寻找i，结果是16
+        document.write(sMyString.lastIndexOf("i", 3) + "<br>");
+        //可选参数，从第3个字符开始往前（左）寻找，结果是2.
+        document.write(sMyString.lastIndexOf("V") + "<br>");
+        //大写“V”找不到，返回-1
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

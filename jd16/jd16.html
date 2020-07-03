@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>getAttribute()和setAttribute()</title>
+<script language="javascript">
+function myDOMInspector(){
+	//获取图片，取第一个img标记的内容
+	var myImg = document.getElementsByTagName("img")[0];
+	//获取图片title属性
+	alert(myImg.getAttribute("title"));
+}
+function changePic(){ //获取图片
+var myImg = document.getElementsByTagName("img")[0];
+//设置图片src和title属性
+myImg.setAttribute("src","02.jpg");
+myImg.setAttribute("title","紫荆公寓");
+}
+</script>
+</head>
+
+<body onLoad="myDOMInspector()">
+<img src="01.jpg" title="情人坡" onClick="changePic()"/>
+</body>
+</html>

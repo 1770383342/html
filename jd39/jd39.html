@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>屏蔽鼠标右键</title>
+<script language="javascript">
+function block(oEvent){
+	if(window.event)
+	oEvent = window.event;
+	if(oEvent.button == 2)
+	alert("鼠标右键不可用");
+}
+document.onmousedown = block;
+//onmousedown不区分左中右三个鼠标键
+</script>
+</head>
+
+<body>
+<p>屏蔽鼠标右键</p>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>字符匹配的使用</title>
+</head>
+
+<body>
+<h3>字符匹配的使用</h3>
+<script language="javascript">
+var textString="Mrsoft";
+var reg_expression = /[A-Z][a-z]soft/;
+var result=reg_expression.test(textString);
+document.write("<font size='+1'>匹配结果为："+result+"<br>");
+if(result){
+	document.write("在“"+textString+"”中找到了正则表达/[A-Z][a-z]soft/的匹配。<br>");
+}
+else{
+	document.write("未找到匹配的模式！");
+}
+</script>
+</body>
+</html>

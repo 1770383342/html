@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>box-shadow</title>
+		<style>
+			*{border-radius: 8px;}
+			div{float: left;}
+			.demo1,.box1, .box2{
+				margin: 10px;
+				width: 100px;
+				height: 50px;
+				border: 1px solid #ccc;
+				position: relative;
+			}
+			p{font-size:10px; text-align:center;
+			line-height:24px;}
+			/*p{border:1px solid #f0f;}/*为确立line-height值是使用*/
+			.demo1{
+				-webkit-box-shadow:3px 3px 3px;
+				-moz-box-shadow:3px 3px 3px;
+				box-shadow:3px 3px 3px;
+			}
+			.outer{
+				margin: 10px;
+				border: 1px solid #CCCCCC;
+				width: 100px; height: 100px;
+			}
+			.inter{
+				width: 60px;
+				height: 60px;
+				margin: 10px auto;/*上下外边距10px,左右居中*/
+				background: #f69;
+				-webkit-box-shadow: 50px 50px green;
+				-moz-box-shadow:50px 50px green;
+				box-shadow:50px 50px green;
+			}
+			.box1{-webkit-box-shadow: 5px 5px 5px #999 inset;
+				-moz-box-shadow:5px 5px 5px #999 inset;
+				box-shadow:5px 5px 5px #999 inset;}
+				.box2{-webkit-box-shadow: -5px -5px 5px #999 inset;
+				-moz-box-shadow:-5px -5px 5px #999 inset;
+				box-shadow:-5px -5px 5px #999 inset;}
+		</style>
+	</head>
+	<body>
+		<div class="demo1"><p>未指定阴影色</p></div>
+		<div class="outer">
+			<div class="inter"></div>
+		</div>
+		<div class="box1"><p>阴影效果</p></div>
+		<div class="box2"><p>阴影效果</p></div>
+	</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>while语句</title>
+</head>
+
+<body>
+<script language="javascript">
+var i=iSum=0; //相当于var i=0; var iSum=0;
+while(i<101){  //不用(1<=100),因为两次比较
+iSum += i; //iSum = iSum+i;
+i++; //i=i+1;
+}
+alert(iSum);
+</script>
+</body>
+</html>

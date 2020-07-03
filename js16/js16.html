@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>sort()方法</title>
+<script language="javascript">
+var aFruit = ["pear","apple","peach","orange"];
+document.write(aFruit+"<br/>");
+function sortNumber(a,b){return a-b};
+//升序排列函数
+function sortNumber1(a,b){return b-a};
+//降序排列函数
+aFruit.sort(sortNumber);
+//数组升序排列后保存在数组变量中
+document.write(aFruit+"<br/>");
+aFruit.sort(sortNumber1);
+//数组降序排列后保存在数组变量中
+document.write(aFruit+"<br/>");
+//字符串数组对升序和降序函数都无效
+aFruit.sort();
+document.write(aFruit+"<br/>"+"<br/>");
+var arr = new Array(6);
+arr[0] = "10";
+arr[1] = "5";
+arr[2] = "40";
+arr[3] = "25";
+arr[4] = "1000";
+arr[5] = "1";
+document.write(arr + "<br/>");
+document.write(arr.sort() + "<br/>");
+//在数值数组中sort()方法函数按字符串方式进行升序排列
+document.write(arr.sort(sortNumber) + "<br/>");
+//数值数组岁升序函数有效
+document.write(arr.sort(sortNumber1)+"<br/>");
+//数值数组对降序函数有效
+</script>
+</head>
+
+<body>
+</body>
+</html>

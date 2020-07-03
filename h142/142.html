@@ -1,0 +1,48 @@
+﻿
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>表单</title>
+	</head>
+	<body>
+		<form action="h142.php" method="get" name="h142表单" target="_blank">
+			姓名：
+			<input name="xm" type="text" size="10" ><br />
+			年龄： <input name="nl" type="text" /><br />
+			性别： <input name="sex" type="radio" value="male" checked /> 男 &nbsp;&nbsp;
+			<input name="sex" type="radio" value="female" />女<br>
+			博客名称：
+			<input name="bkmc" type="text" value="道升随笔" /><br />
+			博客网址：
+			<input name="bkwz" type="text" maxlength="200" value="http://" />
+			<br />
+			博客后台密码：
+			<input name="bkmm" type="password" /><br />
+			&nbsp;&nbsp;确认密码：
+			<input name="qrmm" type="password" /><br />
+			上传个人照片：
+			<input name="zp" type="file" /> <br />
+			<hr width="390px" align="left" />
+			请你选择你喜欢的音乐：
+			<input type="checkbox" name="m1" value="摇滚乐" checked />摇滚乐
+			<input type="checkbox" name="m2" value="爵士乐" />爵士乐
+			<input type="checkbox" name="m3" value="流行乐" /> 流行乐<br /><br />
+			请你选择居住城市：
+			<input name="city" type="radio" value="北京" />北京
+			<input name="city" type="radio" value="上海" />上海
+			<input name="city" type="radio" value="重庆" checked  />重庆
+			<input name="city" type="radio" value="天津" />天津<br />
+			<hr width="390px" align="left" />
+			要记住隐藏传送表单名：
+			<input type="hidden" name="formname" value="h142表单" /><br />
+			<input type="reset" name="reset" value="重置" />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<!--一下图片当提交按钮使用-->
+			单击图标也能提交内容：
+			<input type="image" name="image" src="img/142.ico" width="30" align="bottom" />
+			<input name="submit" type="submit" value="提交" />
+			<br />
+		</form>
+	</body>
+</html>

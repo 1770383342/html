@@ -1,0 +1,40 @@
+﻿
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>父块position:relative,子块position:absolute</title>
+		<style type="text/css">
+			html,body{width: 100%; height: 100%;}
+			/*html5中，如果没有上句代码，父块形成不了块，是一条线*/
+			body{
+				margin: 10px;
+				font-family: arial;
+				font-size: 13px;
+			}
+			#father{
+				margin: 20px;
+				background-color: #a0c8ff;
+				border: 1px dashed #000000;
+				width: 85%;
+				height: 85%;
+				position: relative;/*默认属性值*/
+			}
+			#block{
+				background-color: #fff0ac;
+				border: 1px dashed #000000;
+				padding: 10px;
+				position: absolute;/*absolute绝对定位*/
+				left:0px;  /*子块左上角与父块左上角重叠*/
+				top:0px;   /*子块左上角与父块左上角重叠*/
+				/*right: 0px;   /*子块右下角与父块右下角重叠*/
+				/*bottom: 0px;  /*子块右下角与父块右下角重叠*/
+			}
+		</style>
+	</head>
+	<body>
+		<div id="father">
+			<div id="block">absolute</div>
+		</div>
+	</body>
+</html>

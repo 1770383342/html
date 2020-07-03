@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>追加CSS类别</title>
+<style type="text/css">
+.myUL1{
+	color:#0000FF;
+	font-family:Arial;
+	font-weight:bold;
+}
+.myUL2{
+	text-decoration:underline;
+}
+</style>
+<script language="javascript">
+function check(){
+	var oMy = document.getElementsByTagName("ul")[0];
+	oMy.className = "myUL2";  //修改CSS类
+		}
+		</script>
+</head>
+
+<body>
+<ul onClick="check()" class="myUL1">
+<li>HTML</li>
+<li>JavaScript</li>
+<li>CSS</li>
+<ul>
+</body>
+</html>

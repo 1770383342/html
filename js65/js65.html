@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Date对象</title>
+<script language="javascript">
+function disDate(oDate, iDate){
+	var ms = oDate.getTime();//换成毫秒数，时间戳
+	ms = ms - iDate*24*60*60*1000;
+	//计算相差的毫秒数
+	return new Date(ms);//返回新的时间对象
+}
+var oBeijing = new Date(2019,0,1);
+var iNum = 267; //前100天
+var oMyDate = disDate(oBeijing, iNum);
+document.write(oMyDate.getFullYear()+"年"+(oMyDate.getMonth()+1)+"月"+oMyDate.getDate()+"日" +"距离"+oBeijing.getFullYear()+"年"+(oBeijing.getMonth()+1)+"月"+oBeijing.getDate()+"日为"+iNum+"天");
+</script>
+</head>
+
+<body>
+</body>
+</html>

@@ -1,0 +1,92 @@
+﻿
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>h144实验：表单</title>
+	</head>
+	<body>
+		<form action="h144.php" enctype="multipart/form-data"
+			method="post" name="h144表单" target="_blank">
+		姓名：
+		<input name="xm" type="text" size="10">
+		<br/>
+		年龄：
+		<input name="nl" type="text">
+		<br/>性别：
+		<input name="sex" type="radio" value="male" checked>
+		男&nbsp;&nbsp;
+		<input name="sex" type="radio" value="female">
+		女<br> 博客名称：
+		<input name="bkmc" type="text" value="道升随笔">
+		<br/> 博客网址：
+		<input name="bkwz" type="text" maxlength="200" value="http://">
+		<br/>
+		博客后台密码：
+		<input name="bkmm" type="password"><br/>
+		&nbsp;&nbsp;确认密码：
+		<input name="qrmm" type="password">
+		<br/>
+		上传个人照片：
+		<input name="zp" type="file"><br/>
+		<hr width="390px" align="left"/>
+		请你选择喜欢的音乐：<br>
+		<select name="music[]" size="5" multiple id="musical">
+			<!--注意：用了属性size就是列表框-->
+			<option value="摇滚乐">摇滚乐</option>
+			<option value="流行乐">流行乐</option>
+			<option value="爵士乐">爵士乐</option>
+			<option value="古典乐">古典乐</option>
+			<option value="轻音乐">轻音乐</option>
+			<option value="交响乐">交响乐</option>
+			<option value="中国民族乐">中国民族乐</option>
+			<option value="管弦乐">管弦乐</option>
+			<option value="美声唱法">美声唱法</option>
+			<option value="通俗唱法">通俗唱法</option>
+			</select>
+			<br /><br />
+			
+			居住城市和地址：<br />
+			<select name="city" id="city1">
+				<!--注意：没有用属性size就是组合列表框，也称下拉菜单-->
+				<option value="北京">北京</option>
+				<option value="上海">上海</option>
+				<option value="天津">天津</option>
+				<option value="重庆" selected>重庆</option>
+				<option value="黑龙江">黑龙江</option>
+				<option value="吉林">吉林</option>
+				<option value="辽宁">辽宁</option>
+				<option value="山东">山东</option>
+				<option value="四川">四川</option>
+				<option value="贵州">贵州</option>
+				<option value="云南">云南</option>
+				<option value="河南">河南</option>
+				<option value="江西">江西</option>
+				<option value="江苏">江苏</option>
+				<option value="福建">福建</option>
+				<option value="广东">广东</option>
+				<option value="广西">广西</option>
+				<option value="湖北">湖北</option>
+				<option value="湖南">湖南</option>
+				<option value="陕西">陕西</option>
+				<option value="山西">山西</option>
+				<option value="浙江">浙江</option>
+				<option value="河北">河北</option>
+				</select>
+				<br />
+				<textarea name="dz" rows="6" cols="52" id="textareal"></textarea>
+				<br />
+				<hr width="390px" align="left" />
+				要记住隐藏传送表单名：
+				<input type="hidden" name="formname" value="h144表单" />
+				<br />
+				<input name="reset" type="reset" value="重置" />
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<!--一下图片当提交按钮使用-->
+				单击图标也能提交内容：
+				<input type="image" name="image" src="../h143/img/142.ico" width="30" align="bottom" />
+				<input name="submit" type="submit" value="提交" />
+				<br />
+		</form>
+	</body>
+</html>

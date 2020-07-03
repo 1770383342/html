@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>圆点(.)元字符</title>
+</head>
+
+<body>
+<h3>圆点(.)元字符的使用</h3>
+<script language="javascript">
+var textString = "明日科技 mingri 有限公司 mr";
+var reg_expression = /明....m/;
+var result=reg_expression.test(textString);
+document.write("<font size='+1'>匹配结果为："+result+"<br>");
+if(result){ document.write("在“"+textString + "”中找到正则表达式/明....m/的匹配。<br>");
+}else{ document.write("未找到匹配的模式！");
+}
+</script>
+</body>
+</html>

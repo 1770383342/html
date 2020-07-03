@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Date对象</title>
+<script language="javascript">
+var oMyDate = new Date();
+var iYear = oMyDate.getFullYear();
+var iMonth = oMyDate.getMonth() + 1;//月份是从0开始的
+var iDate = oMyDate.getDate();
+var iDay = oMyDate.getDay();
+switch(iDay){
+	case 0:
+	iDay = "星期日";
+	break;
+	case 1:
+	iDay = "星期一";
+	break;
+	case 2:
+	iDay = "星期二";
+	break;
+	case 3:
+	iDay = "星期三";
+	break;
+	case 4:
+	iDay = "星期四";
+	break;
+	case 5:
+	iDay = "星期五";
+	break;
+	case 6:
+	iDay = "星期六";
+	break;
+	default:
+	iDay = "error";
+}
+document.write("今天是" + iYear + "年" + iMonth +"月" + iDate + "日，" + iDay);
+</script>
+</head>
+
+<body>
+</body>
+</html>

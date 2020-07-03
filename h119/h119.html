@@ -1,0 +1,51 @@
+﻿
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>导航菜单</title>
+		<style type="text/css">
+			body{ margin: 15px; font-family: arial; font-size: 12px;}
+			.father{
+				background-color: transparent;
+				border: 0px;
+				padding: 25px;     /*父块的padding */
+			}
+			.son1{ padding: 5px;
+			margin-right: 3px;   /*子块son1的右margin*/
+			background-color: #70baff;
+			border: 1px dashed #111111;
+			float: left; /*子块son1向左浮动*/
+			display: block;
+			}
+			.son2{  padding: 5px;
+			background-color: #ffd270;
+			border: 1px dashed #111111;
+			float: left; /*子块son2也向左浮动 */
+			width: 60%;  display: none;
+			}
+		</style>
+		<script type="text/javascript">
+			window.onload=function(){
+				var oDiv=document.getElementsByTagName("div");
+				//oDiv是对象数组，依次把三个DIV都取了出来。
+				var mySon1=oDiv[1];//数组取元素
+				var mySon2=oDiv[2];
+				mySon1.onmouseover=function(){
+					mySon2.style.display="block";//style表示行内定义样式
+				}
+				mySon1.onmouseout=function(){
+					mySon2.style.display="none"
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="father">
+			<div class="son1">float1</div>
+			<div class="son2">CSS(Cascading Style Sheet),中文译为层叠
+			样式表，是用于控制网页样式并允许将样式信息与网页内容分离的一种标记语言。</div>
+		</div>
+		
+	</body>
+</html>

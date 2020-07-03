@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>径向渐变填充3</title>
+		<style>
+			div{width: 800px; height: 130px; float: left; margin: 5px;}
+			.div1{
+				background: -moz-radial-gradient(ellipse closest-side,#ace,#f96 10%,
+				#1e90ff 50%,#f96);
+				background: -webkit-radial-gradient(ellipse closest-side,#ace,#f96 10%,
+				#1e90ff 50%,#f96);
+			}
+			.div2{
+				background: -moz-radial-gradient(ellipse farthest-corner,#ace,#f96 10%,
+				#1e90ff 50%,#f96);
+				background: -webkit-radial-gradient(ellipse farthest-corner,#ace,#f96 10%,
+				#1e90ff 50%,#f96);
+			}
+			.div3{
+				background: -moz-radial-gradient(circle closest-side,#ace,#f96 10%,
+				#1e90ff 50%,#f96);
+				background: -webkit-radial-gradient(circle closest-side,#ace,#f96 10%,
+				#1e90ff 50%,#f96);
+			}
+			.div4{
+				background: -moz-radial-gradient(circle farthest-corner,#ace,#f96 10%,
+				#1e90ff 50%,#f96);
+				background: -webkit-radial-gradient(circle farthest-corner,#ace,#f96 10%,
+				#1e90ff 50%,#f96);
+				}
+		</style>
+	</head>
+	<body>
+		<div class="div1">ellipse closest-side,#ace,#f96 10%,
+				#1e90ff 50%,#f96</div>
+				<div class="div2">ellipse farthest-corner,#ace,#f96 10%,
+				#1e90ff 50%,#f96</div>
+				<div class="div3">circle closest-side,#ace,#f96 10%,
+				#1e90ff 50%,#f96</div>
+				<div class="div4">circle farthest-corner,#ace,#f96 10%,
+				#1e90ff 50%,#f96</div>
+	</body>
+</html>

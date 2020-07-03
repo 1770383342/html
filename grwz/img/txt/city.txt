@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>city</title>
+		<style type="text/css">
+			body
+			{
+				background: url(img/雾都.jpg);
+				font: "黑体","微软雅黑","sans-serif";
+				text-align: justify;
+			}
+			.menu
+			{
+				width: 1100px;
+				height:185px;
+				margin: 0 auto;
+				padding: 0;
+				text-align: center;
+				line-height: 120px;
+				background: transparent
+				/*border: solid 1px black;*/
+			}
+			 ul li
+			{
+				width: 200px;
+				height: 185px;
+				margin: 0;
+				padding: 0;
+				list-style-type: none;
+				float: left;
+				/*background: url("img/云朵图.png");*/
+				text-align: center;
+				/*border: solid 1px black;*/
+				line-height: 180px;
+				
+			}
+			ul .pic1
+			{
+				background: url("img/云朵图.png") no-repeat 2px 20px;
+			}
+			ul .pic2
+			{
+				background: url("img/a.jpg") no-repeat;
+				position: relative;
+			}
+			ul .pic2:hover
+			{
+				background: url("img/a.jpg") no-repeat;
+				position: relative;
+				Transform:rotate(-10deg);
+			}
+			 ul li a
+			{
+				text-decoration: none;
+			}
+			ul li a:visited
+			{
+				color: blue;
+			}
+			.demo
+			{
+				font: bold blue;
+				text-shadow:1px 1px  #CA8EC2,
+							 2px 2px  #CA8EC2,
+							 3px 3px  #CA8EC2;
+			}
+			#smalluniversity
+			{
+				width: 400px;
+				height: 60px;
+				margin: 0 auto;
+				/*border: 1px solid #000;*/
+				text-align: justify;
+				line-height: 50px;
+				border-radius: 10px 30px/30px 10px;
+				background: rgba(237,233,230,0.5);
+			}
+			.font1
+			{
+				font-size: 50px;
+				font-weight: 900px;
+				color: red;
+				text-shadow: 5px 5px 5px black;
+			}
+			#picture
+			{
+				width: 1100px;
+				height: 400px;
+				margin: 10px auto 20px;
+				/*border: 1px solid #000;*/
+				border-radius:40px 10px/40px 10px;
+				background: rgba(198,250,232,0.5);
+			}
+			#picture .pic
+			{
+				width: 200px;
+				height: 150px;
+				/*border: 1px solid #000;*/
+				margin: 30px 0px 10px 50px;
+				float: left;
+			}
+			#introduce
+			{
+				width: 1060px;
+				height: 440px;
+				margin: 0 auto;
+				padding: 20px;
+				/*border: 1px solid #000;*/
+				border-radius: 10px 40px/10px 40px;
+				background: rgba(202,253,249,0.5);
+				line-height: 30px;
+			}
+			#footer
+			{
+				width: 1100px;
+				height: 30px;
+				line-height: 30px;
+				margin: 10px auto ;
+				/*border: 1px solid black;*/
+				text-align: center;
+				border-radius:40px 10px/40px 10px;
+				background: rgba(202,253,249,0.5);
+			}
+			.boxs
+			{
+				box-shadow: 5px 5px 5px gray;
+			}
+			.fonts
+			{
+				color: black;
+				font: "微软雅黑" blod;
+				font-size: 12px;
+			}
+			 .mouseOver 
+	        {
+	        	padding: 50px;
+	            background: rgba(71,7,254,0.5);
+				width: 400px;
+				height: 300px;
+			}
+			.mouseOver:hover
+			{
+				position: relative;
+				z-index: 5px;
+			}
+			.pic3
+			{
+				border: 3px solid rgba(71,7,254,0.5);
+            	border-radius: 30px;
+            }
+		</style>
+		<script type="text/javascript">
+			//定义一个函数，增加元素的class属性
+			function AddClass(dom) 
+			{
+				//确保每个图片的class都是”pic“,后面没有空格，然后下面语句的结果就是改成了 "pic mouseOver"。这样一个元素有两个class了。每个class是用空格分隔的
+				dom.className += " mouseOver";
+			}
+			//恢复元素的class
+			function MinusClass(dom)
+			{
+				dom.className = "pic3";
+			}
+			</script>
+	</head>
+	<body><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		<embed src="陈小虎 - 重庆重庆.mp3" loop="ture" width="0" height="0">
+		</embed>
+		<div id="smalluniversity" class="font1 boxs">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;勒 是 雾 都
+		</div>
+		<div id="picture" class="boxs">
+		<div class="pic"><img class="pic3" src="img/洪崖洞.jpg" height="150" width="200" onmouseenter="AddClass(this)" onmouseleave="MinusClass(this)"></div>
+		<div class="pic"><img class="pic3" src="img/解放碑.jpg" height="150" width="200" onmouseenter="AddClass(this)" onmouseleave="MinusClass(this)"></div>
+		<div class="pic"><img class="pic3" src="img/桥.jpg" height="150" width="200" onmouseenter="AddClass(this)" onmouseleave="MinusClass(this)"></div>
+		<div class="pic"><img class="pic3" src="img/立交.jpg" height="150" width="200" onmouseenter="AddClass(this)" onmouseleave="MinusClass(this)"></div>
+		<div class="pic"><img class="pic3" src="img/重庆大剧院.jpg" height="150" width="200" onmouseenter="AddClass(this)" onmouseleave="MinusClass(this)"></div>
+		<div class="pic"><img class="pic3" src="img/重庆大礼堂.jpg" height="150" width="200" onmouseenter="AddClass(this)" onmouseleave="MinusClass(this)"></div>
+		<div class="pic"><img class="pic3" src="img/轻轨.jpg" height="150" width="200" onmouseenter="AddClass(this)" onmouseleave="MinusClass(this)"></div>
+		<div class="pic"><img class="pic3" src="img/索道.jpg" height="150" width="200" onmouseenter="AddClass(this)" onmouseleave="MinusClass(this)"></div>
+		</div>
+		<div id="introduce" class="boxs" style="text-align: justify;">
+			&nbsp;&nbsp;&nbsp;&nbsp;重庆，简称渝或巴，是中华人民共和国直辖市、国家中心城市、超大城市、国际大都市，长江上游地区的经济、金融、科创、航运和商贸物流中心，西部大开发重要的战略支点、“一带一路”和长江经济带重要的联结点以及内陆开放高地；既以江城著称，又以山城扬名。重庆地处中国内陆西南部，东邻湖北、湖南，南靠贵州，西接四川，北连陕西。总面积8.24万平方千米，辖38个区县（自治县）；2016年常住人口3048.43万，城镇化率62.6%，地区生产总值17558.76亿元。有“中国火锅之都”、“中国会展名城”、“世界温泉之都”之称。重庆是中国西南地区融贯东西，汇通南北的综合交通枢纽。其江北国际机场是中国内陆重要的空港，果园港是长江内河重要的港区。重庆地处盆地东部，地形由南北向长江河谷倾斜，地貌以丘陵、山地为主，其山地占76%；气候冬暖春早，夏热秋凉，长江横贯境内，流程679公里。重庆是国家历史文化名城。1189年，宋光宗赵惇先封恭王再即帝位，自诩“双重喜庆”，重庆由此得名。重庆既是“红岩精神”起源地，又是巴渝文化发祥地，“火锅”、“吊脚楼”等影响深远；在3000余年历史中，曾三为国都，四次筑城，史称“巴渝”；抗战时期为国民政府陪都。重庆是国家重要的现代制造业基地、西南地区最大的工商业城市。有国家级重点实验室8个、国家级工程技术研究中心10个、高校67所，还有中国（重庆）自由贸易试验区、中新（重庆）战略性互联互通示范项目、两江新区、渝新欧国际铁路等战略项目。重庆的地形复杂，大山大水，自古就有“蜀道难”之说。地处中国中部和西部地区结合部的重庆是长江上游地区唯一汇集水、陆、空交通资源的特大型城市，西南地区综合交通枢纽；共建成了“二环十射”高速公路网和“一枢纽八干线”铁路网，港口年吞吐量1.6亿吨，江北国际机场年旅客吞吐量超过3200万人次，构建起航空、铁路、内河港三个交通枢纽，以长江黄金水道、渝新欧国际铁路等为支撑的开放通道。<br />
+    		&nbsp;&nbsp;&nbsp;&nbsp;重庆饮食喜麻辣，以不拘一格使用各种材料创作新菜见长。重庆亦是火锅的发源地之一；2007年3月，重庆市荣获中国烹饪协会授予“中国火锅之都”称号。重庆饮食文化代表：重庆火锅、川菜、渝菜（重庆菜、渝派川菜）、水煮鱼、回锅肉、酸菜鱼、辣子鸡、泉水鸡、水煮肉片、老鸭汤、酸辣粉、鱼香肉丝、泡椒肥肠、粉蒸肉、烧白、重庆小面、重庆小吃等。
+		</div>
+		<br><br><br><br><br><br>
+		<div id="footer"class="boxs fonts">
+			— —重庆师范大学计算机与信息科学学院计算机科学与技术专业2班谭自立的个人网站— —
+		</div>
+	</body>
+</html>

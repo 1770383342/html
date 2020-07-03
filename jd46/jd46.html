@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>element.style.property</title>
+<style type="text/css">
+#example{color:red; font-size:66px; font-family:arial,sans-serif;}
+</style>
+<script>
+window.onload=function(){
+	var oobj=document.getElementsByClassName("example");
+	var para=oobj[0];
+	var mydisplay=oobj[1];
+	/*
+	var para=document.getElementsByClassName("example")[0];
+	var mydisplay=document.getElementsByClassName("example")[1];
+	*/
+	mydisplay.innerHTML+=
+	"dom元件的节点名："+para.nodeName+"<br>"+
+	"dom元件的字体："+para.style.fontFamily+"<br>"+
+	"dom元件的字号："+para.style.fontSize+"<br>"+
+	"dom元件的字体颜色："+para.style.color+"<br>";
+}
+</script>
+</head>
+
+<body>
+<p class="example">这是一段文字的例子。。。</p>
+<div class="example"></div>
+</body>
+</html>

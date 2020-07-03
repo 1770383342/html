@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>parentNode</title>
+<script language="javascript">
+function myDOMInspector(){
+	var myItem = document.getElementById("myDearFood");
+	var parentElm = myItem.parentNode;
+	while(parentElm.className != "colorful" && parentElm != document.body)
+	parentElm = parentElm.parentNode; //一路往上找
+	alert(parentElm.tagName);
+}
+</script>
+</head>
+
+<body onLoad="myDOMInspector()">
+<div class="colorful">
+<ul>
+<li>糖醋排骨</li>
+<li>圆笼粉蒸肉</li>
+<li>泡菜鱼</li>
+<li id="myDearFood">板栗烧鸡</li>
+<li>麻婆豆腐</li></ul></body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>push函数和pop函数</title>
+<script language="javascript">
+var stack = new Array();//创建一个空数组
+stack.push("red");
+stack.push("green");
+stack.push("blue");//stack数组中有了三个元素
+document.write(stack.toString() + "<br/>");
+var vItem = stack.pop();//vItem变量中是blue元素
+document.write(vItem + "<br>");//显示blue元素
+document.write(stack.toString());//显示前2个元素
+</script>
+</head>
+
+<body>
+</body>
+</html>

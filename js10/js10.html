@@ -1,0 +1,33 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Javascript写在body标记里</title>
+</head>
+
+<body>
+    <script language="javascript">
+        var boo = true;
+        var boo1 = new Boolean(true);
+        var n = 255;
+        var married = true;
+        married1 = "true";
+        alert("1." + typeof married);
+        alert("2." + typeof (married1));
+        document.write(typeof (boo));
+        document.write("    ");
+        document.write(boo);
+        document.write("    ");
+        document.write(typeof (boo1));
+        document.write("    ");
+        document.write(boo1 + "<br>");
+        document.write(n.toString() + "<br>");
+        document.write(n.toString(10) + "<br>");
+        document.write(n.toString(2) + "<br>");
+        document.write(n.toString(16) + "<br>");
+    </script>
+</body>
+
+</html>

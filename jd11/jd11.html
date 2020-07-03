@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>childNodes</title>
+<script language="javascript">
+function myDOMInspector(){
+	var oUl = document.getElementById("myList");
+	//获取<ul>标记
+	var DOMString = "";
+	if(oUl.hasChildNodes()){
+		//判断是否有子节点
+		var oCh = oUl.childNodes;
+		for(var i=0;i<oCh.length;i++)  //逐一查找
+		DOMString += oCh[i].nodeName + "\n";
+	}
+	alert(DOMString);
+}
+</script>
+</head>
+
+<body onLoad="myDOMInspector()">
+<ul id="myList"><li>糖醋排骨</li><li>圆笼粉蒸肉</li><li>泡菜鱼</li><li>板栗烧鸡</li><li>麻婆豆腐</li></ul>
+</body>
+</html>

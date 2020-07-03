@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>后代选择器</title>
+<style>
+div .c1{color:red;}
+body {font-size:30px;color:blue; font-weight: bold;}
+</style>
+</head>
+<body>
+<p class="c1">此p标记引用了c1类选择器，可是颜色不变。这是由于此p标记不是div标记的后代标记</p>
+<div>
+<p class="c1">
+此p标记引用C1类选择器，颜色变成红色了。这是由于p标记是div标记后代标记。<br/><br/>
+<span class="c1">此span标记是div标记的孙标记，引用C1类选择器也变成了红色，因为后代选择器对孙标记一样有效。。当龟孙子不吃亏。。。</span>
+</p>
+</div>
+</body>
+</html>

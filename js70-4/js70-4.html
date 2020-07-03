@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>反向“预测先行”匹配</title>
+</head>
+
+<body>
+<script>
+var ss="在10年前我们使用Windows2000,在15年前我们使用windows2003，在5年前我们使用WindowsNT";
+var reg0bj=/windows(?!2000)/i;
+var result=reg0bj.exec(ss);//exec函数的返回值是数组。0号元素为整个正则表达式匹配值，1号元素为第1分组的匹配值，2号元素为第2分组的匹配值，以此类推。
+document.write("/windows(?!2000)/i:"+result);
+document.write("<br><br>");
+
+var reg0bj=/Windows(?!2003)/;
+var result=reg0bj.exec(ss);
+document.write("/windows(?!2003)/:"+result);
+document.write("<br><br>");
+
+var reg0bj=/Windows(?!NT)/i;
+var result=reg0bj.exec(ss);
+document.write("/windows(?!NT)/i:"+result);
+document.write("<br><br>");
+
+var reg0bj=/Windows(?!2000|2003)/g;
+var result=reg0bj.exec(ss);
+document.write("/windows(?!2000|2003)/g:"+result);
+document.write("<br><br>");
+
+var reg0bj=/Windows(?!NT|2000)/;
+var result=reg0bj.exec(ss);
+document.write("/windows(?!NT|2000)/:"+result);
+document.write("<br><br>");
+
+var reg0bj=/Windows(?!2003|NT)/i;
+var result=reg0bj.exec(ss);
+document.write("/windows(?!2003|NT)/iS:"+result);
+document.write("<br><br>");
+</script>
+</body>
+</html>

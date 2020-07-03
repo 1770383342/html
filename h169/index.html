@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>重复填充</title>
+		<style>
+			div{width: 400px; height: 280px; margin: 10px; float: left;}
+			.div1{
+				background: -moz-repeating-radial-gradient(#ace,#ace 5px,#f96 5px, #f96 10px);
+				background: -webkit-repeating-radial-gradient(#ace,#ace 5px,#f96 5px, #f96 10px);
+			}
+			.div2{
+				background: -moz-repeating-radial-gradient(circle,#ace,#ace 5px,#f96 5px, #f96 10px);
+				background: -webkit-repeating-radial-gradient(circle,#ace,#ace 5px,#f96 5px, #f96 10px);
+			}
+			.div3{
+				background: -moz-repeating-linear-gradient(-45deg,#ace,#ace 5px,#f96 5px, #f96 10px);
+				background: -webkit-repeating-linear-gradient(-45deg,#ace,#ace 5px,#f96 5px, #f96 10px);
+			}
+			.div4{
+				background: -moz-repeating-linear-gradient(0deg,#ace,#ace 5px,#f96 5px, #f96 10px);
+				background: -webkit-repeating-linear-gradient(90deg,#ace,#ace 5px,#f96 5px, #f96 10px);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1">-webkit-repeating-radial-gradient(#ace,#ace 5px,#f96 5px, #f96 10px)</div>
+		<div class="div2">-webkit-repeating-radial-gradient(circle,#ace,#ace 5px,#f96 5px, #f96 10px)</div>"
+		<div class="div3">-webkit-repeating-linear-gradient(-45deg,#ace,#ace 5px,#f96 5px, #f96 10px)</div>
+		<div class="div4">-webkit-repeating-linear-gradient(90deg,#ace,#ace 5px,#f96 5px, #f96 10px)</div>
+	</body>
+</html>

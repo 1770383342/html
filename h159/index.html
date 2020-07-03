@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Chrome线性渐变填充</title>
+		<style>
+			div{width: 350px;height: 180px; border: 2px solid #f0f; float: left; margin: 10px;}
+			.new1{background: -webkit-linear-gradient(top,#ff0,#f00);}
+			.old1{background:-webkit-gradient(linear,left top, left bottom,from(#ff0), to(#f00)) ;}
+			.new2{background: -webkit-linear-gradient( left top,#ff0,#f00);}
+			.old2{background:-webkit-gradient(linear,left top, right bottom,from(#ff0), to(#f00)) ;}
+			.new3{background: -webkit-linear-gradient( right top,#ff0,#f00);}
+			.old3{background:-webkit-gradient(linear,right top, left bottom,from(#ff0), to(#f00)) ;}
+		</style>
+	</head>
+	<body>
+	<div class="new1">这是新式写法</div>
+	<div class="old1">这是旧式写法</div>
+	<div class="new2">这是新式写法</div>
+	<div class="old2">这是旧式写法</div>
+	<div class="new3">这是新式写法</div>
+	<div class="old3">这是旧式写法</div>
+	</body>
+</html>

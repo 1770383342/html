@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Math.random()</title>
+<script language="javascript">
+function selectFrom(iFirstValue, iLastValue){
+	var iChoices = iLastValue - iFirstValue + 1;
+	//计算项数
+	return
+	Math.floor(Math.random()*iChoices+iFirstValue);
+}
+var iNum = selectFrom(2,99);//随机选择数字
+var aFruits = ["apple","pear","peach","orange","watermelon","banana"];
+//随机选择数组元素
+var sFruit = aFruits[floor(selectFrom(0,aFruits.length))];
+alert(iNum + " "+ sFruit);
+</script>
+</head>
+
+<body>
+</body>
+</html>

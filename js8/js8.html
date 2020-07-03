@@ -1,0 +1,28 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>数值计算</title>
+    <script language="javascript">
+        var mynum1 = 23.345;
+        var mynum2 = 45;
+        var mynum3 = -34;
+        var mynum4 = 9e5;  //科学计数法
+        var fNumber = 895.4;
+        alert(mynum1 + "  " + mynum2 + "  " + mynum3 + "  " + mynum4);
+        alert(fNumber.toExponential(1));//8.954*10²，保留一位小数，5要四舍五入，结果为9.0*10²
+        alert(fNumber.toExponential(2));
+    </script>
+</head>
+
+<body>
+    <p>23.345</p>
+    <p>45</p>
+    <p>-34</p>
+    <p>9e5</p>
+    <p>895.4</p>
+</body>
+
+</html>

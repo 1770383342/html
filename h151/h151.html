@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>超级链接类型标识图标</title>
+		<script type="text/javascript" src="img/jquery.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("a[href$=pdf]").addClass("pdf");
+				$("a[href$=xls]").addClass("xls");
+				$("a[href$=ppt]").addClass("ppt");
+				$("a[href$=rar]").addClass("rar");
+				$("a[href$=gif]").addClass("img");
+				$("a[href$=jpg]").addClass("img");
+				$("a[href$=png]").addClass("img");
+				$("a[href$=txt]").addClass("txt");
+				$("a[href$=anchor]").addClass("external").attr({  target:"_blank"});
+				$("a[href$=com]").addClass("external").attr({  target:"_blank"});
+				$("a[href$=cn]").addClass("external").prop({  target:"_blank"});
+				//attr()函数与prop()函数等效，但在v1.6以后建议使用prop()函数。
+			})
+		</script>
+		<style type="text/css">
+			p{ float: left; width: 200px; margin: 4px;}
+			/*多添加了二个属性（前面二个红色属性）*/
+			a.pdf {
+				background: url(img/icon_pdf.gif) no-repeat left center;
+					padding-left: 18px;
+				}
+			a.xls {
+				background: url(img/icon_xls.gif) no-repeat left center;
+					padding-left: 18px;
+				}
+			a.ppt {
+					background: url(img/icon_ppt.gif) no-repeat left center;
+					padding-left: 18px;
+				}
+			a.rar {
+					background: url(img/icon_rar.gif) no-repeat left center;
+					padding-left: 18px;
+				}
+			a.img {
+					background: url(img/icon_img.gif) no-repeat left center;
+					padding-left: 18px;
+				}
+			a.txt {
+					background: url(img/icon_txt.gif) no-repeat left center;
+					padding-left: 18px;
+				}
+			a.external {
+					background: url(img/window.gif) no-repeat left center;
+					padding-left: 18px;
+				}
+		</style>
+	</head>
+	<body>
+		<h1>超级链接类型标识图标</h1>
+		<p><a href="http://www.baidu.com/name.pdf">PDF文件</a></p>
+		<p><a href="http://www.baidu.com/name.ppt">PPT文件</a></p>
+		<p><a href="http://www.baidu.com/name.xls">XLS文件</a></p>
+		<p><a href="http://www.baidu.com/name.rar">RAR文件</a></p>
+		<p><a href="http://www.baidu.com/name.gif">GIF文件</a></p>
+		<p><a href="http://www.baidu.com/name.jpg">JPG文件</a></p>
+		<p><a href="http://www.baidu.com/name.png">PNG文件</a></p>
+		<p><a href="http://www.baidu.com/name.txt">TXT文件</a></p>
+		<p><a href="http://www.baidu.com/#anchor">#锚点超链接</a></p>
+		<p><a href="http://www.baidu.com/">http://www.baidu.com</a></p>
+		<p><a href="http://www.sina.com.cn">http://www.sina.com.cn</a></p>
+	</body>
+</html>

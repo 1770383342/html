@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>线性渐变填充角度的设置</title>
+		<style type="text/css">
+			div{width: 350px; height: 180px; border: 2px solid #f0f;
+			float: left; margin: 5px;}
+			.new{background: -moz-linear-gradient(left,#ace,#f96);
+			/*background:-webkit-linear-gradient(left,#ace,#f96);
+			/*下句代码与本剧代码等效*/
+			background:-webkit-gradient(linear, 0 0, 100% 0,
+			from(#ace),to(#f96));/*沿着x轴方向填充*/
+			background:-o-linear-gradient(left,#ace,#f96);}
+			.new1{
+				background:-moz-linear-gradient(30deg, #ace, #f96);
+				background:-webkit-linear-gradient(30deg, #ace, #f96);
+				/*background:-webkit-gradient(linear, 0 100%,100% 0, from(#ace), to(#f96));
+				 * 元素宽高比为2:1，所以是30度
+				 */
+				background:-o-linear-gradient(30deg, #ace, #f96);}
+		</style>
+	</head>
+	<body>
+		<div class="new">left,#ace,#f96</div>
+		<div class="new1">left 30deg, #ace, #f96</div>
+	</body>
+</html>

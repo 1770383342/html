@@ -1,0 +1,146 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>伸缩的菜单</title>
+<style>
+<!--
+body{
+	background-color:#ffdee0;
+	/*页面背景颜色，当背景颜色为#000000时，背景为黑色。*/
+}
+#navigation{/*整个菜单是个div方块，此id号用来定义此菜单div的*/
+width:200px;
+font-family:Arial;
+}
+#navigation > ul {
+	list-style-type:none;/*不显示项目符号*/
+	margin:0px;
+	padding:0px;
+}
+#navigation > ul > li {
+	border-bottom:1px solid #ed9f9f;
+	/*添加下划线
+	项目边框底线用来显示菜单项的下划线效果，如果把浏览器背景设计成黑色，则菜单项下划线效果就出来了，请看下图：*/
+	}
+	/*菜单列表项里都有<a>链接标签，用于打开其他链接对象用
+	*/
+	#navigation > ul > li > a{
+		display:block;  /*区块显示*/
+		padding:5px 5px 5px 0.5em;
+		text-decoration:none;
+		border-left:12px solid #711515;
+		/*左边的粗红边*/
+		border-right:1px solid #711515;
+		/*右边阴影*/
+	}
+	#navigation > ul >li > a:link, #navigation > ul > li > a:visited{
+		background-color:#c11136;
+		color:#ffffff;/*平时菜单显示文字为白色*/
+	}
+	#navigation > ul >li > a:hover{
+		/*鼠标经过时*/
+		background-color:#990020;/*改变背景色*/
+		color:#ffff00; /*改变文字颜色*/
+	}
+	//当鼠标移到菜单上时菜单字符将变成黄色
+	/*子菜单的CSS样式*/
+	#navigation ul li ul{/*子菜单的无序列表格式设置*/
+	list-style-type:none;
+	margin:0px;
+	padding:0px 0px 0px 0px;
+	}
+	#navigation ul li ul li {
+		/*子菜单项目标记顶边线颜色与主菜单项目底边线颜色一样*/
+		border-top:1px solid #ed9f9f;
+	}
+	#navigation ul li ul li a{
+		/*子菜单链接标记属性定义*/
+		display:block;
+		padding:3px 3px 3px 0.5em;
+		text-decoration:none;
+		border-left:28px solid #a71f1f;
+		border-right:1px solid #711515;
+	}
+	#navigation ul li ul li a:link, #navigation ul li ul li a:visited{
+		/*子菜单链接标记平时和访问后的背景和字符属性定义*/
+		background-color:#e85070;
+		color:#ffffff;//子菜单平时和访问后字符为白色
+	}
+	/*平时或者访问过后子菜单 字符颜色为白色，而背景为粉红色。
+	当鼠标在子菜单上时，字符为黄色，而背景要深一点。
+	*/
+	#navigation ul li ul li a:hover{
+		/*当鼠标在子菜单上时*/
+		background-color:#c2425d;
+		color:#ffff00;//子菜单字符为黄色
+	}
+	#navigation ul li ul.myHide{/*隐藏子菜单*/
+	display:none;
+	/*请对照阅读后面的子菜单无序列表引用了此类选择器*/
+	}
+	#navigation ul li ul.myShow{/*显示子菜单*/
+	display:block;
+	}
+	-->
+	</style>
+    <script language="javascript">
+	function change(){
+		//这里的this就是子菜单ul,this.parentNode表示有子菜单那项的主菜单的LI
+		var oSecondDiv = this.parentNode.getElementsByTagName("ul")[0];
+		//把单击的那个子菜单的ul取出来放在oSecondDiv变量中
+		//下句代码就是对子菜单显示和隐藏
+		if(oSecondDiv.className == "myHide")
+		oSecondDiv.className = "myShow";
+		else
+		oSecondDiv.className = "myHide";
+	}
+	window.onload = function(){
+		var oUl = document.getElementById("listUL");
+		//主菜单的无序列表的id号为listUL
+		var aLi = oUl.childNodes;
+		//主菜单ul的子元素，主菜单ul下面的各项目LI，aLi对象主菜单的菜单项目，也是数组对象。
+		var oA;
+		for(var i=0;i<aLi.length;i++){
+			//如果主菜单下面的项目列表下有子菜单ul
+			if(aLi[i].tagName == "LI" && aLi[i].getElementsByTagName("ul").length){
+				//在主菜单里的LI中寻找到ul，且length不为0，表示有子菜单的ul列表项
+				oA = aLi[i].firstChild; //firstChild就是子菜单ul
+				oA.onclick = change;//对子菜单单击时调用change函数
+			}
+		}
+	}
+	</script>
+</head>
+
+<body>
+<div id="navigation">
+<ul id="listUL"><!--主菜单无序列表-->
+<li><a href="#">Home</a></li>
+<li><a href="#">News</a>
+<!--子菜单无序列表-->
+<ul class="myHide">
+<li><a href="#">Lastest News</a></li>
+<li><a href="#">All News</a></li>
+</ul>
+</li>
+<li><a href="#">Sports</a>
+<!--子菜单无序列表-->
+<ul class="myHide">
+<li><a href="#">Basketball</a></li>
+<li><a href="#">Football</a></li>
+<li><a href="#">Volleyball</a></li>
+</ul>
+</li>
+<li><a href="#">Weather</a>
+<!--子菜单无序列表-->
+<ul class="myHide">
+<li><a href="#">Today's Weather</a></li>
+<li><a href="#">Forecast</a></li>
+</ul>
+</li>
+<li><a href="#">Conract Me</a></li>
+</ul><!--主菜单无序列表结束-->
+</div>
+</body>
+</html>

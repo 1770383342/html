@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>text-shadow效果2</title>
+		<style>
+			div{margin: 5px;}
+			.demo{
+				background: #666;
+				width: 440px;
+				padding: 30px;
+				color: #fff;
+				font: bold 55px/100% "微软雅黑","lucida grande","lucida sans",helvetica,arial,sans;
+				text-transform: uppercase;
+			}
+			.demo4{color: #000; text-shadow: 0 1px 1px #FFFFFF;}
+			.demo5{color: #ccc;
+			text-shadow: -1px -1px 0 #fff,
+			1px 1px 0 #333,
+			1px 1px 0 #444;
+			}
+			.demo6{color: transparent; text-shadow: 0 0 5px #f96;}
+			.demo7{
+				color: transparent;
+				text-shadow: 0 0 6px #f96, -1px -1px #fff, 1px -1px #444;
+			}
+			.demo8{color: #566f89; background: #c5dff8;
+			text-shadow: 1px 1px 0 #e4f1ff;}
+		</style>
+	</head>
+	<body>
+		<div class="demo demo4">Apple Style Effext</div>
+		<div class="demo demo5">Photoshop Emboss Effect</div>
+		<div class="demo demo6">Blurytext Effect</div>
+		<div class="demo demo7">emboss and blurytext</div>
+		<div class="demo demo8">Inset text effect</div>
+	</body>
+</html>

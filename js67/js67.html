@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>匹配字符$的使用</title>
+<meta http-equiv="content-type" content="text/html"; charset="utf-8">
+</head>
+
+<body>
+<h3>行尾匹配字符$的使用</h3>
+<script language="javascript">
+var regexp = /ft$/;  //检查末尾是“ft”的字符串
+var txt="mingrisoft";
+var result=regexp.test(txt);  //匹配时test函数返回true,否则false
+document.write("<font size='+1'>"+result+"<br>");
+if(result){
+	document.write("正则表达式/ft$/匹配字符串\""+txt+"\".<br>");
+}else{alert("未找到匹配的模式！");
+}
+</script>
+</body>
+</html>

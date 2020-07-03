@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>arguments</title>
+<script language="javascript">
+function fnAdd(){
+	if(arguments.length == 0)
+	return;
+	else if(arguments.length ==1)
+	return arguments[0] + 5;
+	//录入一个参数加5
+	else{//至少录入二个参数后求和
+	var iSum = 0;
+	for(var i=0;i<arguments.length;i++)
+	iSum += arguments[i];
+	return iSum;
+	}
+}
+</script>
+</head>
+
+<body>
+<script language="javascript">
+document.write(fnAdd(45) + "<br>");
+document.write(fnAdd(45,50) + "<br>");
+document.write(fnAdd(45,50,55,60) +"<br>");
+</script>
+</body>
+</html>

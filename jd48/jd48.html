@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>element.style.property</title>
+<style type="text/css">
+.example{color:blue; font-size:36px; font-family:黑体;}
+.qing{color:#0ff;}
+.zhi{color:#f0f;}
+</style>
+<script>
+window.onload=function(){
+	var oobj=document.getElementsByClassName("example");
+	var para=oobj[0];
+	var mydisplay=oobj[1];
+	mydisplay.innerHTML+=
+	"dom元件的节点名："+para.nodeName+"<br>"+
+	"dom元件的字体："+para.style.fontFamily+"<br>"+
+	"dom元件的字号："+para.style.fontSize+"<br>"+
+	"dom元件的字体颜色："+para.style.color+"<br>";
+}
+function color1(){
+	var oobj=document.getElementsByClassName("example");
+	var mydisplay=oobj[1];
+	mydisplay.className="qing";
+}
+function color2(){
+	var oobj=document.getElementsByClassName("example");
+	var mydisplay=oobj[1];
+	mydisplay.className="zhi";
+}
+</script>
+</head>
+
+<body>
+<input type="button" value="青色" onClick="color1()"/>
+<input type="button" value="紫色" onClick="color2()"/>
+<p class="example">这是一段文字的例子。。。</p>
+<div class="example"></div>
+</body>
+</html>

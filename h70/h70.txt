@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>利用背景颜色块延伸图片右侧的区域</title>
+<style>
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color: #ffebe5;
+}
+.topbanner {
+	background-color: #fbc9ba;
+}
+.leftbanner {
+	width: 22%;
+	height: 330px;
+	vertical-align: top;
+	background-color: #6d1700;
+	color: #ffffff;
+	text-align: left;
+	padding-left: 40px;
+	font-size: 14px;
+}
+.mainpart {
+	text-align: center;
+}
+</style>
+</head>
+
+<body>
+<table cellpadding="1" width="100%" border="0">
+  <tr>
+    <td colspan="2" class="topbanner"><img src="img/1.jpg" border="0" /></td>
+  </tr>
+  <tr>
+    <td class="leftbanner"><br>
+      <br>
+      首页<br>
+      <br>
+      分类讨论 <br>
+      <br>
+      谈天说地<br>
+      <br>
+      精华区 <br>
+      <br>
+      我的信箱<br>
+      <br>
+      休闲娱乐 <br>
+      <br>
+      立即注册<br>
+      <br>
+      离开本站 </td>
+    <p><td class="mainpart">正文内容</td></p><p><td class="mainpart">没有</td></p>
+  </tr>
+</table>
+</body>
+</html>

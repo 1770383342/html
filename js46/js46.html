@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>倒计时</title>
+<script>
+function countdown(title,Intime,divId){
+	var online= new Date(Intime); //根据参数定义时间对象
+	var now = new Date(); //取出当前系统时间对象
+	var leave = online.getTime() - now.getTime();
+	//把时间转换为时间戳，计算二个相差时间的毫秒数。时间戳是从1970年1月1日0时0分0秒开始计算到指定时间的毫秒数。getTime()函数把日期转换为时间戳。
+	var day = Math.floor(leave/(1000*60 * 60 *24));
+	//毫秒除1000位秒，60秒为1分，60分为1小时，24小时为1天
+	//var day = Math.ceil(leave/(1000*60 *60 *24))-1;
+	//ceil()是天花板取整函数，floor()是地板取整函数。Math是静态类，在使用方法函数要在函数名前面添加静态类名。静态类不使用new 类名()来创建一个类的实例。
+	//var day = parseInt(leave/(1000*60 *60 *24));
+	//ceil()是天花板取整函数，floor()是地板取整函数。
+	if (day > 1){
+		divId.innerHTML="<b>--距"+title+"还有"+day +"天！</b>"; //页面显示信息
+		}
+		else{
+			if(day==1){
+				divId.innerHTML="<b>--明天就是"+title+"啦！</b>";
+			}else{
+				if(day == 0){divId.innerHTML="<b>今天就是"+title+"呀！</b>";
+				}else{
+					divId.innerHTML="<b>--哎呀！"+title+"已经过了！</b>";
+				}
+			}
+		}
+}
+</script>
+</head>
+
+<body>
+<div id="countDown">
+<b>--</b>
+</div>
+<script>
+//countdown("2017年元旦","2017,1,1",countDown_;<!--调用JavaScript函数-->
+countdown("2019年元旦","Jan 1,2019",countDown);
+</script>
+</body>
+</html>

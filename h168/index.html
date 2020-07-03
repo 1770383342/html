@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>径向渐变填充5</title>
+		<style>
+			div{width: 600px; height: 280px; float: left; margin: 5px;}
+			.div1{
+				background: -moz-radial-gradient(circle,#ace,#f96);
+				background: -webkit-radial-gradient(circle,#ace,#f96);
+			}
+			.div2{
+				background: -moz-radial-gradient(80% 20%, closest-corner,#ace,#f96);
+				background: -webkit-radial-gradient(80% 20%, closest-corner,#ace,#f96);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div1">circle,#ace,#f96</div>
+		<div class="div2">80% 20%, closest-corner,#ace,#f96</div>
+	</body>
+</html>

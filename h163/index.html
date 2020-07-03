@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>在线性填充中使用rgba函数</title>
+		<style>
+			div{width: 500px; height: 250px;  margin: 10px; border: 5px dashed #f00;
+			overflow: hidden;}
+			/*div{background: url(img/qiuqiu-250.png);}*/
+			.new1{
+				background: -moz-linear-gradient(right,rgba(255,0,255,1),rgba(0,0,255,1));
+				background: -webkit-linear-gradient(right,rgba(255,0,255,1),rgba(0,0,255,1));
+				background: -o-linear-gradient(right,rgba(255,0,255,1),rgba(0,0,255,1));
+				/*background:url(img/qiuqiu-250.png);}*/
+			}
+			.new2{
+				background: -moz-linear-gradient(right,rgba(255,0,255,0.4),rgba(0,0,255,0.8));
+				background: -webkit-linear-gradient(right,rgba(255,0,255,0.4),rgba(0,0,255,0.8));
+				background: -o-linear-gradient(right,rgba(255,0,255,0.4),rgba(0,0,255,0.8));
+				/*background:url(img/qiuqiu-250.png);}*/
+			}
+		</style>
+	</head>
+	<body>
+		<div class="new1" align="center"><img src="img/qiuqiu-250.png" height="250px"></div>
+		<div class="new2" align="center"><img src="img/qiuqiu-250.png"></div>
+	</body>
+</html>

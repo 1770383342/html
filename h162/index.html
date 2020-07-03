@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>线性渐变填充角度的设置</title>
+		<style>
+			div{width:350px; height: 180px; border: 2px dashed #f0f;
+			float: left; margin: 5px;}
+			.h{
+				background: -moz-linear-gradient(left, #ace, #f96);
+				background: -webkit-linear-gradient(left,#ace,#f96);
+				background: -o-linear-gradient(left,#ace,#f96);
+				/*用IETester测试，IE5.5,7,8,9有效，只有IE6无效*/
+				filter:progid:DXImageTransform.Microsoft.gradient(gradientType='0',
+				startColorStr='#ffccee',endColorStr='#ff9900');
+				/*IE8,9有效，其他浏览器无效，无用*/
+				 /*-ms-
+				 * filter:"progid:DXImageTransform.Microsoft.gradient(gradientType='0',;
+				 starColorStr='#ffccee',endColorStr='#ff9900')";
+				 */
+			}
+			.v{
+				background: -moz-linear-gradient(top,#ace,#f96);
+				background: -webkit-linear-gradient(top,#ace,#f96);
+				background: -o-linear-gradient(top,#ace,#f96);
+				/*用IETester测试，IE5.5,7,8,9有效，只有IE6无效*/
+				filter:progid:DXImageTransform.Microsoft.gradient(gradientType='1',
+				starColorStr='#ffccee',endColorStr='#ff9900');
+				/*IE8，9有效，其他浏览器无效，无用*/
+				/*-ms-
+				 * filter:"progid:DXImageTransform.Microsoft.gradient(gradientType='1',;
+				 starColorStr='#ffccee',endColorStr='#ff9900')";
+				 */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="h">left,#ace,#f96</div>
+		<div class="v">top,#ace,#f96</div>
+	</body>
+</html>

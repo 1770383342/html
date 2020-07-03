@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>before和after伪类选择器</title>
+		<style>
+			.p1:before
+			{
+				content: "台词：";
+				background-color: yellow;color: red;font-weight: bold;
+			}
+			.p2:after
+			{
+				content: "-台词";
+				background-color: #00c;color: #fff;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="p1">我是唐老鸭。</p>
+		<p class="p1">我住在Duckburg。</p>
+		<p class="p1"><b>注释 ：</b>对于在IE8中工作的：before,
+		必须声明DOCTYPE。</p>
+		<hr>
+		<p class="p2">我是唐老鸭。</p>
+		<p class="p2">我住在Duckburg。</p>
+		<p class="p2"><b>注释：</b>对于在IE8中工作的：after,
+		必须声明DOCTYPE。</p>
+	</body>
+</html>
